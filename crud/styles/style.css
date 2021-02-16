@@ -1,0 +1,161 @@
+body{
+    margin: 0;
+    background-color: #DAC6B5;
+}
+h1 {
+  text-align: center;
+}
+.type-bar{
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: row;
+    background-color: #b18777;
+    flex: 1;
+    text-align: center;
+    font-size: 20px;
+    justify-content: space-around;
+    border-bottom: 2px solid #000;
+}
+.cars-bar {
+    display: flex;
+    flex-direction: column;
+}
+.car{
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: row;
+    background-color: #A18276;
+    flex: 1;
+    text-align: center;
+    font-size: 20px;
+    justify-content: space-around;
+    flex-grow: 100%;
+    text-align: center;   
+}
+.car-item {
+  text-align: center;
+  flex: 1;
+  border-left: 1px solid rgb(92, 91, 91);
+}
+.modal-btn {
+  background-color: #67eb4d;
+  border: 2px solid #5ab847;
+  height: 34px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.edit-btn {
+  background-color: #f1ee3b;
+  border: 2px solid #dddb63;
+  height: 34px;
+  text-align: center;
+  color: #000;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.delete-btn {
+  background-color: #df3232;
+  border: 2px solid #c22020;
+  height: 34px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  .modal-body{
+    margin: 20px 0 20px 0;
+
+  }
+  .modal-body form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+  }
+  .modal-body input {
+    height: 22px;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  .modal-body form button{
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #67eb4d;
+    border: 2px solid #5ab847;
+    height: 34px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  .modal-body {padding: 2px 16px;}
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }

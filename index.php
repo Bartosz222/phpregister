@@ -16,7 +16,7 @@ if($data->required_vailidation($field))
 
     if($data->can_login('users_table', $field)){
     $_SESSION['username'] = $_POST['username1'];
-    header("location: wejscie.php");
+    header("location: crud/index.php");
     }
 }
 else{
