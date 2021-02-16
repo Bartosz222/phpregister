@@ -1,0 +1,1 @@
+<center><h1>ZALOGOWANO</h1></center>
